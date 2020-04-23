@@ -27,6 +27,7 @@
    <center>
       <AnchorPane BorderPane.alignment="CENTER">
          <children>
+            <TextArea fx:id="txtResult" layoutX="14.0" layoutY="50.0" promptText="Welcome to Alien Dictionary v2019" />
             <HBox>
                <children>
                   <Label text="Alien text">
@@ -34,26 +35,20 @@
                         <Insets left="20.0" />
                      </HBox.margin>
                   </Label>
-                  <TextField fx:id="inserisciTxt" promptText="Insert the text...">
+                  <TextField fx:id="txtInserisci" promptText="Insert the text...">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
                   </TextField>
-                  <Button fx:id="text" mnemonicParsing="false" text="Translate">
+                  <Button fx:id="btnTranslate" mnemonicParsing="false" onAction="#doTranslate" text="Translate">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
                   </Button>
                </children>
             </HBox>
+            <Button fx:id="btnReset" layoutX="454.0" layoutY="242.0" mnemonicParsing="false" onAction="#doReset" text="ClearText" />
          </children>
       </AnchorPane>
    </center>
-   <bottom>
-      <TextArea fx:id="butto" promptText="Welcome to Alien Dictionary v2019" BorderPane.alignment="CENTER">
-         <BorderPane.margin>
-            <Insets bottom="60.0" />
-         </BorderPane.margin>
-      </TextArea>
-   </bottom>
 </BorderPane>
