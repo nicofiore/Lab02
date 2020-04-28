@@ -13,7 +13,7 @@ import javafx.scene.control.TextField;
 
 public class FXMLController {
 	
-	private AlienDictionary alienDictionary;
+	private AlienDictionary alienDictionary= new AlienDictionary();
 
     @FXML
     private ResourceBundle resources;
