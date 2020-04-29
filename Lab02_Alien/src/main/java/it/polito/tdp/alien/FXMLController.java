@@ -1,4 +1,3 @@
-
 package it.polito.tdp.alien;
 
 import java.net.URL;
@@ -32,11 +31,6 @@ public class FXMLController {
 
     @FXML
     private Button btnReset;
-
-    @FXML
-    void doReset(ActionEvent event) {
-
-    }
 
     @FXML
     void doTranslate(ActionEvent event) {
@@ -89,19 +83,24 @@ public class FXMLController {
     		
     	}  
     	
-    	
     		
-
+    	}
+    
+    
+    @FXML
+	void doReset() {
+    	this.txtInserisci.clear();
+    	this.txtResult.clear();
+    	this.alienDictionary.resetDictionary();
+    	
     }
 
-    @FXML
+	@FXML
     void initialize() {
         assert txtResult != null : "fx:id=\"txtResult\" was not injected: check your FXML file 'Scene.fxml'.";
         assert txtInserisci != null : "fx:id=\"txtInserisci\" was not injected: check your FXML file 'Scene.fxml'.";
         assert btnTranslate != null : "fx:id=\"btnTranslate\" was not injected: check your FXML file 'Scene.fxml'.";
         assert btnReset != null : "fx:id=\"btnReset\" was not injected: check your FXML file 'Scene.fxml'.";
-         
 
     }
-    
 }
