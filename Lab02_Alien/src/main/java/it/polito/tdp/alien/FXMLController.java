@@ -1,7 +1,5 @@
 package it.polito.tdp.alien;
 
-import java.net.URL;
-import java.util.ResourceBundle;
 import java.util.StringTokenizer;
 
 import javafx.event.ActionEvent;
@@ -12,13 +10,7 @@ import javafx.scene.control.TextField;
 
 public class FXMLController {
 	
-	private AlienDictionary alienDictionary= new AlienDictionary();
-
-    @FXML
-    private ResourceBundle resources;
-
-    @FXML
-    private URL location;
+	AlienDictionary alienDictionary = new AlienDictionary();
 
     @FXML
     private TextArea txtResult;
@@ -31,6 +23,8 @@ public class FXMLController {
 
     @FXML
     private Button btnReset;
+
+
 
     @FXML
     void doTranslate(ActionEvent event) {

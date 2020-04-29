@@ -50,9 +50,9 @@
                </children>
             </HBox>
             <Button fx:id="btnReset" layoutX="454.0" layoutY="242.0" mnemonicParsing="false" onAction="#doReset" text="ClearText" />
-            <ImageView fitHeight="63.0" fitWidth="127.0" layoutX="410.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="81.0" fitWidth="85.0" layoutX="405.0" layoutY="-29.0">
                <image>
-                  <Image url="@../../../../../../../Downloads/Alien-512.png" />
+                  <Image url="@Alien-512.png" />
                </image>
             </ImageView>
          </children>
